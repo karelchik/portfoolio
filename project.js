@@ -36,7 +36,7 @@ if (!project) {
 
   // The pane starts on the project's cover image and returns to it when no
   // hotword is hovered.
-  const defaultSrc = project.img;
+  const defaultSrc = project.coverImg || project.img;
   paneImg.src = defaultSrc;
   paneImg.alt = project.title || "";
 
